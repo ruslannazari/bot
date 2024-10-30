@@ -1,7 +1,7 @@
 import { Bot, Context } from 'grammy'
 
 const {
-    BOT_TOKEN: token = '7714266406:AAESvtQV2DpsC1No6rzgS9WcFg8MQHdBcjM',
+    BOT_TOKEN: token = '',
 } = process.env
 
 // Set your token in the vercel environment variable
