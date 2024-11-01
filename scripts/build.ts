@@ -1,7 +1,6 @@
 import { bot } from '../src/bot'
 
-bot.init()
-console.info('Info:', bot.botInfo)
+
 
 const {
     VERCEL_URL: host,
@@ -15,6 +14,4 @@ console.log(webhook)
 console.log(process.env.BOT_TOKEN)
 
 bot.api.setWebhook(webhook)
-const data = bot.api.getWebhookInfo()
-
-console.log('Webhook set to URL:',data)
+console.info('Info:', bot.api.getWebhookInfo())
