@@ -1,8 +1,5 @@
 import { bot } from '../src/bot'
 
-bot.init()
-console.info('Info:', bot.botInfo)
-
 const {
     VERCEL_URL = 'localhost',
     VERCEL_BRANCH_URL: hostname = VERCEL_URL,
