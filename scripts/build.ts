@@ -12,3 +12,4 @@ console.log(webhook)
 console.log(process.env.BOT_TOKEN)
 
 bot.api.setWebhook(webhook)
+console.log("Done")
