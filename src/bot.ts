@@ -10,7 +10,10 @@ const {
 export const bot = new Bot(token)
 
 bot.command("start", async ctx=>{
-   await ctx.reply("Привет, это бот на TS)")
+   await ctx.reply("Привет, это бот на TS, который работает на VERCEL)")
+})
+bot.command("settings", async ctx=>{
+   await ctx.reply("Настройки бота)")
 })
 // attach all middleware
 bot.on('message', async ctx => {
