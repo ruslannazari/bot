@@ -1,5 +1,6 @@
 import { bot } from '../src/bot'
 
+bot.init()
 
 
 const {
@@ -15,3 +16,4 @@ console.log(process.env.BOT_TOKEN)
 
 bot.api.setWebhook(webhook)
 console.log("Done")
+console.log(bot.api.token)
