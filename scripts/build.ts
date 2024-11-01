@@ -6,6 +6,9 @@ const {
     WEBHOOK: webhook = `https://${host}/api/webhook`,
 } = process.env
 
-console.log(webhook)
+bot.catch(console.error)
 
-void bot.api.setWebhook(webhook)
+console.log(webhook)
+console.log(process.env.BOT_TOKEN)
+
+bot.api.setWebhook(webhook)
